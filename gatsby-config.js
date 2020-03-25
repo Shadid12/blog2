@@ -7,9 +7,9 @@ module.exports = {
   siteMetadata: {
     url,
     siteUrl: url,
-    title: 'Blog by John Doe',
+    title: 'shadid blog',
     subtitle:
-      'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+      '',
     copyright: '© All rights reserved.',
     disqusShortname: '',
     menu: [
@@ -21,14 +21,14 @@ module.exports = {
         label: 'About me',
         path: '/about/',
       },
-      {
-        label: 'Contact me',
-        path: '/contact/',
-      },
+      // {
+      //   label: 'Contact me',
+      //   path: '/contact/',
+      // },
     ],
     author: {
-      name: 'John Doe',
-      email: '#',
+      name: 'Shadid Haque',
+      email: 'shadidhaque2014@gmail.com',
       telegram: '#',
       twitter: '#',
       github: '#',
