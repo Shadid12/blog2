@@ -7,6 +7,26 @@ import profilePic from '../../pages/photo.png'
 import './style.scss'
 
 class Sidebar extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = { value: '' }
+
+    this.handleChange = this.handleChange.bind(this)
+    this.handleSubmit = this.handleSubmit.bind(this)
+  }
+
+  handleChange(event) {
+    this.setState({ value: event.target.value })
+  }
+
+  handleSubmit(event) {
+    if(!this.state.value) {
+      alert('Email is not valid. Please enter a valid email')
+    }
+    alert('Thank you!! you are all set')
+    this.setState({ value: '' })
+    event.preventDefault()
+  }
   render() {
     const { location } = this.props
     const {
@@ -54,6 +74,14 @@ class Sidebar extends React.Component {
           <div>
             <Menu data={menu} />
             <Links data={author} />
+            <form onSubmit={this.handleSubmit}>
+              <label>
+                Signup for my email list and never miss a post!!!
+                <br />
+                <input type="text" class="email-in" value={this.state.value} onChange={this.handleChange} />
+              </label>
+              <input type="submit" value="Submit" class="email-in"/>
+            </form>
             <p className="sidebar__copyright">{copyright}</p>
           </div>
         </div>
