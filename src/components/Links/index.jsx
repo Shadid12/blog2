@@ -37,11 +37,11 @@ class Links extends React.Component {
           </li>
           <li className="links__list-item">
             <a
-              href={`https://www.vk.com/${links.vk}`}
+              href={`${links.vk}`}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <i className="icon-vkontakte" />
+              <i className="icon-linkedin" />
             </a>
           </li>
         </ul>

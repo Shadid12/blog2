@@ -33,7 +33,7 @@ module.exports = {
       twitter: 'https://twitter.com/HaqueShadid',
       github: 'https://github.com/Shadid12',
       rss: '#',
-      vk: '#',
+      vk: 'https://www.linkedin.com/in/shadid-haque/',
     },
   },
   plugins: [
